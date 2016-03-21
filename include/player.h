@@ -7,15 +7,17 @@
 class Player {
 	
 private:
-	std::string name;
+	const std::string name; // Needs to be const... 
 	unsigned int cash;
 //	std::vector<Ownable *> owned_assets;
-	char token;
+	const char token; // Needs to be const as well... 
 public:
 	Player(std::string name, char token);
+	Player(const Player &p);
+	//Player &operator=(const Player &p);
 
-	int getCash();
-	std::string getName();
+	int getCash() const;
+	std::string getName() const;
 };
 
 #endif

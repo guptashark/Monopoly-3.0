@@ -2,7 +2,7 @@
 CC=g++
 
 # The flags for the compiler
-CFLAGS= -Wall -Werror -Wextra -c -pedantic -Iinclude
+CFLAGS= -Wall -Werror -Wextra -c -std=c++11 -pedantic -Iinclude
 
 # Flags for debug enabled compilation
 DFLAGS= $(CFLAGS) -g
