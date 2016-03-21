@@ -10,9 +10,9 @@ DFLAGS= $(CFLAGS) -g
 .PHONY: all	clean debug
 
 # Add new files that should be worked with here. 
-SRCFILES= main.c 
+SRCFILES= main.cc controller.cc player.cc game.cc
 LIBFILES= 
-HEADERS= 
+HEADERS= controller.h player.h game.h
 
 # The directory in which to put all your .c files. 
 SRC=src/
@@ -29,8 +29,8 @@ DEBUG=build/debug/
 DIRS= bin build build/install build/debug
 
 #The objects
-SRCOBJS=$(addprefix $(BUILD), $(patsubst %.c, %.o, $(SRCFILES) $(LIBFILES)))
-DBOBJS= $(addprefix $(DEBUG), $(patsubst %.c, %.o, $(SRCFILES) $(LIBFILES)))
+SRCOBJS=$(addprefix $(BUILD), $(patsubst %.cc, %.o, $(SRCFILES) $(LIBFILES)))
+DBOBJS= $(addprefix $(DEBUG), $(patsubst %.cc, %.o, $(SRCFILES) $(LIBFILES)))
 DEPS=$(addprefix $(INCLUDE), $(HEADERS)) 
 
 # Note that I had to add the weird linker thing at the end for math.h
