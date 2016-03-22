@@ -49,4 +49,5 @@ void Controller::startUp(void) {
 void Controller::showStatus(void) {
 
 	game.listPlayers();
+	game.listTiles();
 }

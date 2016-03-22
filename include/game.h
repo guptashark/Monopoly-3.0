@@ -14,7 +14,7 @@ class Game {
 private:
 	unsigned short numPlayers;
 	std::vector<Player> players;
-//	std::vector<Tiles> tiles;
+	std::vector<Tile *> tiles;
 public:
 	Game(void);
 
@@ -22,6 +22,7 @@ public:
 
 	// For debugging puproses: 
 	void listPlayers();
+	void listTiles();
 
 };
 
