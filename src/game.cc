@@ -10,11 +10,24 @@
 #include "freeparking.h"
 #include "gotojail.h"
 #include "jail.h"
+#include "start.h"
 
 Game::Game(void): numPlayers(0) {
+
+	tiles.emplace_back(new Start("Go", this));
 	tiles.emplace_back(new Property("Mediterranean Ave.", "brown", 60, 1, 1, 1, 1, 1));
-	tiles.emplace_back(new LuxuryTax("Community", this));
-	tiles.emplace_back(new Railroad("B & R Railroad", "rails", 200));
+	tiles.emplace_back(new LuxuryTax("CommunityChest", this));
+	tiles.emplace_back(new Property("Baltic Ave.", "brown", 60, 1, 1, 1, 1, 1));
+	tiles.emplace_back(new Railroad("Reading", "rails", 200));
+	
+	tiles.emplace_back(new Property("Oriental Ave.", "teal", 100, 1, 1, 1, 1, 1));
+	tiles.emplace_back(new Chance("Chance", this));
+	tiles.emplace_back(new Property("Vermont Ave.", "teal", 100, 1, 1, 1, 1, 1));
+	tiles.emplace_back(new Property("Connecticut Ave.", "teal", 120, 1, 1, 1, 1, 1));
+	tiles.emplace_back(new Jail("Jail", this));
+
+	tiles.emplace_back(new Property("St. Charles Place", "purple", 140, 1, 1, 1, 1, 1));
+
 	tiles.emplace_back(new Railroad("Reading", "rails", 200));
 	tiles.emplace_back(new Railroad("Board rail", "rails", 200));
 	tiles.emplace_back(new Property("Boardwalk", "blue", 400, 1, 1, 1, 1, 1));
