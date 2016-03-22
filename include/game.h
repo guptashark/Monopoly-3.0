@@ -17,6 +17,7 @@ private:
 	std::vector<Tile *> tiles;
 public:
 	Game(void);
+	~Game();
 
 	void addPlayer(std::string name, char token);
 

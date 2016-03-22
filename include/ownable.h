@@ -13,7 +13,7 @@ public:
 	Ownable(std::string name, 
 			std::string color, 
 			unsigned int price); // This'll never be used anyways~
-
+	virtual ~Ownable();
 
 	virtual unsigned int getRent() = 0;	
 	// FOr utilities, we can store the roll in game, 

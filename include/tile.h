@@ -13,7 +13,7 @@ protected: // Should this be private?
 public:
 	
 	Tile(std::string name);
-
+	virtual ~Tile();
 	// For debugging purposes.  
 	virtual void printInfo(void) const = 0;
 };

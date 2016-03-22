@@ -8,6 +8,14 @@ Game::Game(void): numPlayers(0) {
 //	tiles.emplace_back(Railroad("Board rail", "rails", 200));
 }
 
+Game::~Game(void) {
+
+	std::vector<Tile *>::iterator i;
+	for(i = tiles.begin(); i != tiles.end(); i++) {
+		delete(*i);
+	}
+}
+
 void Game::addPlayer(std::string name, char token) {
 
 	players.emplace_back(Player(name, token));
