@@ -10,9 +10,9 @@ DFLAGS= $(CFLAGS) -g
 .PHONY: all	clean debug
 
 # Add new files that should be worked with here. 
-SRCFILES= main.cc controller.cc player.cc game.cc tile.cc ownable.cc railroad.cc 
+SRCFILES= main.cc controller.cc player.cc game.cc tile.cc ownable.cc railroad.cc property.cc utility.cc
 LIBFILES= 
-HEADERS= controller.h player.h game.h tile.h ownable.h railroad.h
+HEADERS= controller.h player.h game.h tile.h ownable.h railroad.h property.h utility.h
 
 # The directory in which to put all your .c files. 
 SRC=src/
