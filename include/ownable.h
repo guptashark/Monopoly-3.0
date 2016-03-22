@@ -15,7 +15,7 @@ public:
 			unsigned int price); // This'll never be used anyways~
 	virtual ~Ownable();
 
-	virtual unsigned int getRent() = 0;	
+	virtual unsigned int getRent() const = 0;	
 	// FOr utilities, we can store the roll in game, 
 	// and give utilities a pointer to game 
 	// so that they can get the roll to calculate rent. 

@@ -9,7 +9,8 @@ class Utility : public Ownable {
 public: 
 	Utility(std::string name, std::string color, unsigned int price);
 
-	unsigned int getRent();
+	void tileAction(void);
+	unsigned int getRent() const;
 
 	// Debugging purposes
 	void printInfo(void) const;

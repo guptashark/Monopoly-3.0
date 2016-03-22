@@ -9,7 +9,8 @@ class Railroad : public Ownable {
 public: 
 	Railroad(std::string name, std::string color, unsigned int price);
 
-	unsigned int getRent();
+	void tileAction(void) { getRent(); };
+	unsigned int getRent() const;
 
 	// Debugging purposes
 	void printInfo(void) const;

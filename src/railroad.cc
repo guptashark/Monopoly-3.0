@@ -4,7 +4,7 @@
 Railroad::Railroad(std::string name, std::string color, unsigned int price): 
 	Ownable(name, color, price) {}
 
-unsigned int Railroad::getRent() {
+unsigned int Railroad::getRent() const {
 	return 25;
 }
 
