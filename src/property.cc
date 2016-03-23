@@ -8,13 +8,17 @@ Property::Property(std::string name,
 					unsigned int twoHouseRent,
 					unsigned int threeHouseRent,
 					unsigned int fourHouseRent,
-					unsigned int hotelRent):
+					unsigned int hotelRent,
+					unsigned int mortgage,
+					unsigned int housePrice):
 	Ownable(name, color, price),
 	oneHouseRent(oneHouseRent),
 	twoHouseRent(twoHouseRent),
 	threeHouseRent(threeHouseRent),
 	fourHouseRent(fourHouseRent),
-	hotelRent(hotelRent) 
+	hotelRent(hotelRent),
+	mortgage(mortgage),
+	housePrice(housePrice)
 {}
 
 unsigned int Property::getRent() const {

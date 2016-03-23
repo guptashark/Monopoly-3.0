@@ -13,6 +13,8 @@ private:
 	const unsigned int threeHouseRent;
 	const unsigned int fourHouseRent;
 	const unsigned int hotelRent;
+	const unsigned int mortgage;
+	const unsigned int housePrice;
 	// gets its own cool rent function or something. 
 public: 
 	Property(std::string name, 
@@ -22,7 +24,9 @@ public:
 			 unsigned int twoHouseRent,
 			 unsigned int threeHouseRent,
 			 unsigned int fourHouseRent,
-			 unsigned int hotelRent);
+			 unsigned int hotelRent,
+			 unsigned int mortgage,
+			 unsigned int housePrice);
 	
 	void tileAction(void) {getRent();};
 	unsigned int getRent() const;
