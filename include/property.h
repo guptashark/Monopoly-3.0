@@ -8,6 +8,7 @@ class Property : public Ownable {
 private: 
 	unsigned int numHouses;
 	bool hotel;
+	const unsigned int rent;
 	const unsigned int oneHouseRent;
 	const unsigned int twoHouseRent;
 	const unsigned int threeHouseRent;
@@ -20,6 +21,7 @@ public:
 	Property(std::string name, 
 			 std::string color, 
 			 unsigned int price, 
+			 unsigned int rent,
 			 unsigned int oneHouseRent,
 			 unsigned int twoHouseRent,
 			 unsigned int threeHouseRent,
