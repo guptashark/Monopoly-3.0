@@ -1,8 +1,8 @@
 #include <iostream>
 #include "utility.h"
 
-Utility::Utility(std::string name, std::string color, unsigned int price): 
-	Ownable(name, color, price) {}
+Utility::Utility(std::string name, Game *game, std::string color, unsigned int price): 
+	Ownable(name, game, color, price) {}
 
 unsigned int Utility::getRent() const {
 	return 25;

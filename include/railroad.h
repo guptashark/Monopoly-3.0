@@ -7,7 +7,7 @@ class Railroad : public Ownable {
 
 	// gets its own cool rent function or something. 
 public: 
-	Railroad(std::string name, std::string color, unsigned int price);
+	Railroad(std::string name, Game *game, std::string color, unsigned int price);
 
 	void tileAction(void) { getRent(); };
 	unsigned int getRent() const;

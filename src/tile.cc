@@ -2,5 +2,5 @@
 
 // Not much to do here... for now.
 
-Tile::Tile(std::string name): name(name) {}
+Tile::Tile(std::string name, Game *game): name(name), game(game)  {}
 Tile::~Tile() {}

@@ -7,7 +7,7 @@ class Utility : public Ownable {
 
 	// gets its own cool rent function or something. 
 public: 
-	Utility(std::string name, std::string color, unsigned int price);
+	Utility(std::string name, Game *game,  std::string color, unsigned int price);
 
 	void tileAction(void);
 	unsigned int getRent() const;

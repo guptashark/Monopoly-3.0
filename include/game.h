@@ -15,7 +15,7 @@ private:
 	unsigned short numPlayers;
 	std::vector<Player> players;
 	std::vector<Tile *> tiles;
-
+	Player *currentPlayer;
 public:
 	Game(void);
 	~Game();
@@ -25,8 +25,7 @@ public:
 	// For debugging puproses: 
 	void listPlayers();
 	void listTiles();
-
-
+	Player *getCurrentPlayer(void);
 };
 
 

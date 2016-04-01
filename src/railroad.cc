@@ -1,8 +1,8 @@
 #include <iostream>
 #include "railroad.h"
 
-Railroad::Railroad(std::string name, std::string color, unsigned int price): 
-	Ownable(name, color, price) {}
+Railroad::Railroad(std::string name, Game *game, std::string color, unsigned int price): 
+	Ownable(name, game, color, price) {}
 
 unsigned int Railroad::getRent() const {
 	return 25;
