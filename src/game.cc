@@ -134,6 +134,26 @@ void Game::listTiles(void) {
 	}
 }
 
+int Game::playerPay(Player *p, unsigned int value) {
+	// do nothing for now
+	(void)p;
+	(void)value;
+	return 0;
+}
+
+int Game::playerCollect(Player *p, unsigned int value) {
+	// do nothing for now
+	(void)p;
+	(void)value;
+	return 0;
+}
+
+unsigned int Game::getNumOwned(Player *p, std::string color) {
+	(void)p;
+	(void)color;
+	return 0;
+}
+
 Player *Game::getCurrentPlayer(void) {
 	return currentPlayer;
 }
